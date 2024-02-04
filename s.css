@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    background-color: hsl(207, 69%, 10%);
+    background-image: url("bg.png");
+    
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    
+  
+}
+
+.Rocky-Weather_App{
+    background-color:rgb(152, 181, 199);
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 15px;
+    align-items: center;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 20px;
+    border: 2px solid #3f7583;
+    border-radius: 15px;
+    font-size: 1rem;
+    height: 3.5rem;
+}
+
+.search-btn {
+    background-color: black;
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    margin-left: 10px;
+    transition: backgroung-color 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: 2980b9;
+}
+
+.city-date-section {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.city-date-section .city {
+    font-size: 2rem;
+    opacity: 0.9;
+}
+
+.city-date-section .date {
+    background-color: #1f7287;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.temperature-info {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.temperature-info .temp {
+    font-size: 10rem; /* Adjust the font size as needed */
+    font-family: 'Arial', sans-serif;
+    /* Use a font that supports the degree symbol */
+    display: flex;
+    align-items: top; /* Align the degree symbol with the text */
+}
+
+.temperature-info .temp::after {
+    content: "\00b0"; /* Unicode for the degree symbol */
+    font-size: 9rem; /* Adjust the size of the degree symbol */
+    margin-left: -10px; /* Adjust spacing between the temperature value and symbol */
+}
+
+.temperature-info .description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.temperature-info .description i {
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+
+.temperature-info .description span {
+    font-size: 1.5rem;
+}
+
+.additional-info {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.wind-info,
+.humidity-info,
+.visibility-info {
+    background-color: #76a2ad;
+    width: 130px;
+    display: flow-root;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 15px;
+    padding: 30px 20px;
+    box-shadow: rgb(0, 0, 0) 0px 3px 8px;
+}
+
+.additional-info .material-icons {
+    font-size: 4rem;
+    opacity: 0.9;
+}
+
+.wind-info div,
+.humidity-info div,
+.visibility-info div {
+    text-align: right;
+}
